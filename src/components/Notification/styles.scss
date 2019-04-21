@@ -1,0 +1,18 @@
+.notification {
+  max-width: 300px;
+  color: #FFF;
+  border: 1px solid #000;
+  top: 5px;
+  padding: 5px;
+}
+.notification_err {
+  background: #FF0000;
+}
+.notification_ok {
+  background: green;
+}
+.notfication-close {
+  padding: 0 0 0 10px;
+  float: right;
+  cursor: pointer;
+}
