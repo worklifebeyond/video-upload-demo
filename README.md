@@ -1,30 +1,21 @@
-Simple React + Redux app that demonstrate uploading a file.
-====
+* Request with your `Bearer Token`, change this line:
 
-### Install & Run
-````bash
-npm install
-npm start
-````
-Try to open [http://localhost:3000](http://localhost:3000)
+```javascript
+.set('Authorization', 'Bearer <your_token_here>')
+```
+  File:  `\src\actions\uploadActions.js`
 
-#### Validate
-Checks syntax errors, validate webpack.config and run tests once
+* Video manifest
 
-````bash
-npm run validate
-````
+```javascript
+.send({'title': 'your video title', 'description': 'your video desc', 'format': 'video MIME Type'})
+```
+  File:  `\src\actions\uploadActions.js`
+  
+* Example
 
-#### Tests
-````bash
-npm run test
-````
+![enter image description here](https://raw.githubusercontent.com/worklifebeyond/video-upload-demo/master/media_id_sample.PNG)
 
-#### PROS
-+ redux selectors in component
-+ generated v4() id's for notifications
-+ no components plugins
+* W A R N I N G
 
-#### CONS
-+ For this simple application this codebase are overhead.
-+ Hasn't test for success uploadForm action
+  This code is legacy code, I've `npm audit fix --force` to fix everything. If you run (`npm run start`) you'll see a mess. So please fix it by yourself. If you're lazy af like me, for some good reason ofcourse, go to commit list then revert to old one (before npm audit).
